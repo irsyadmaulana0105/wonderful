@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/img/wonderful.png" type="image/png">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <style>
+            .p{
+                width: 110px;
+                height: 70px;
+                position: relative;
+                top: 10px;
+            }
+            .w{
+                width: 120px;
+                height: 70px;
+                position: relative;
+            }
+        </style>
+
+        <title>wonderful Indonesia</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <div class="p"><img src="assets\img\wonderwhite.png" alt=""></div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <div class="dropdown">
+                                <button class="dropbtn">Atraksi</button>
+                                <div class="dropdown-content">
+                                  <a href="#">Destinasi</a>
+                                  <a href="#">Atraksi</a>
+                                  <a href="#">Event</a>
+                                </div>
+                              </div>
+                            <!-- <a href="#home" class="nav__link active-link">Beranda</a> -->
+                        </li>
+                        <li class="nav__item">
+                            <div class="dropdown">
+                                <button class="dropbtn">Inspirasi Seru</button>
+                                <div class="dropdown-content">
+                                  <a href="#">Ide Liburan</a>
+                                  <a href="#">Cerita Perjalan</a>
+                                <a href="#">Jelajah</a>
+                                </div>
+                              </div>
+                        </li>
+                        <li class="nav__item">
+                            <div class="dropdown">
+                                <button class="dropbtn">Rencanakan perjalanan</button>
+                                <div class="dropdown-content">
+                                  <a href="#">Informasi Umum</a>
+                                  <a href="#">Promosi</a>
+                                  <a href="#">#IndonesiaAja</a>
+                                </div>
+                              </div>
+                            <!-- <a href="#discover" class="nav__link">Temukan</a> -->
+                        </li>
+                        <li class="nav__item">
+                            <div class="dropdown">
+                                <button class="dropbtn">Explore</button>
+                                <div class="dropdown-content">
+                                  <!-- <a href="#">Link 1</a>
+                                  <a href="#">Link 2</a>
+                                  <a href="#">Link 3</a> -->
+                                </div>
+                              </div>
+                        <!-- <a href="#place" class="nav__link">Tempat</a> -->
+                        <li class="nav__item">
+                            <div class="dropdown">
+                                <button class="dropbtn">Panduan</button>
+                                <div class="dropdown-content">
+                                  <a href="#">Panduan Brand</a>
+                                  <a href="#">E Brochure</a>
+                                  <a href="#">E tiket</a>
+                                </div>
+                              </div>
+                            <!-- <a href="#discover" class="nav__link">Temukan</a> -->
+                        </li>
+                        <li class="nav__item">
+                            <div class="dropdown">
+                                <button class="dropbtn">Language</button>
+                            <div class="dropdown-content">
+                                <a href="#" onclick="changeLanguage('en')">English</a>
+                                <a href="#" onclick="changeLanguage('fr')">French</a>
+                                <a href="#" onclick="changeLanguage('fr')">Indonesia</a>
+                                <!-- <a href="#">Link 3</a> -->
+                                </div>
+                              </div>
+                            <!-- <a href="#discover" class="nav__link">Temukan</a> -->
+                        </li>
+                    </li>
+                </ul>
+                
+                <div class="nav__dark">
+                    <!-- Theme change button -->
+                    <span class="change-theme-name">Dark mode</span>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
+
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+    </header>
+
+        <main class="main">
+            <section class="home" id="home">
+                <img src="assets/img/bromo.jpg" alt="" class="home__img">
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__data-subtitle">Selamat Datang!</span>
+                        <h1 class="home__data-title">Jelajahi Indonesia   <br> Dari <b>Sabang <br> Sampai Merauke!</b></h1>
+                        <a href="#" class="button">Baca Selengkapnya</a>
+
+                    </div>
+
+                    <div class="home__info">        
+                        <div class="dropdown-content">
+                            <span class="home__info-title">5 tempat rekomendasi </span>
+                            <a href="" class="button button--flex button--link home__info-button">
+                                lainnya <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__info-overlay">
+                            <img src="assets/img/pura.jpg" alt="" class="home__info-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">Informasi Lebih Lanjut
+                             <br> Terkait Tempat Terbaik</h2>
+                        <p class="about__description">Anda dapat menemukan tempat terindah dan menyenangkan dengan harga terbaik dengan diskon khusus, Anda memilih tempat kami akan memandu Anda sepanjang perjalanan menunggu, dapatkan tempat Anda sekarang.
+                        </p>
+                        <a href="#" class="button">Pesan</a>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="assets/img/nusa dua.jpg" alt="" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="assets/img/bangka.jpg" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="discover section" id="discover">
+                <h2 class="section__title">Temukan Tempat <br> Menarik Lainnya</h2>
+                
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/gong.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Goa Gong</h2>
+                                <span class="discover__description">24 tours available</span>
+                            </div>
+                        </div>
+
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/candi.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Borobudur</h2>
+                                <span class="discover__description">15 tours available</span>
+                            </div>
+                        </div>
+
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/ijen.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Kawah Ijen</h2>
+                                <span class="discover__description">18 tours available</span>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/nusa dua.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Nusa Dua</h2>
+                                <span class="discover__description">18 tours available</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="experience section">
+                <h2 class="section__title">Dengan Pengalaman Kami
+                     <br> Akan Melayani Anda</h2>
+
+                <div class="experience__container container grid">
+                    <div class="experience__content grid">
+                        <div class="experience__data">
+                            <h2 class="experience__number">20</h2>
+                            <span class="experience__description">Tahun <br> Pengalaman</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">75</h2>
+                            <span class="experience__description">Yang <br> Berkeliling</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">650+</h2>
+                            <span class="experience__description">Tempat <br> Destinasi</span>
+                        </div>
+                    </div>
+
+                    <div class="experience__img grid">
+                        <div class="experience__overlay">
+                            <img src="assets/img/experience1.jpg" alt="" class="experience__img-one">
+                        </div>
+                        
+                        <div class="experience__overlay">
+                            <img src="assets/img/pante.jpeg" alt="" class="experience__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="place section" id="place">
+                <h2 class="section__title">PILIH AJA</h2>
+
+                <div class="place__container container grid">
+                    <div class="place__card">
+                        <img src="assets/img/boro.jpeg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Borobudur</h3>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <div class="place__card">
+                        <img src="assets/img/Telaga sarangan.jpeg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">5,0</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Tawangmangu</h3>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <div class="place__card">
+                        <img src="assets/img/tumpak sewu.jpeg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,9</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Tumpak Sewu</h3>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <div class="place__card">
+                        <img src="assets/img/romo.jpeg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Bromo</h3>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <div class="place__card">
+                        <img src="assets/img/papuma.jpeg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Papuma</h3>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="subscribe section">
+                <div class="subscribe__bg">
+                    <div class="subscribe__container container">
+                        <h2 class="section__title subscribe__title">Dapatkan E-Book Travel Gratis  <br> dengan Berlangganan</h2>
+    
+                        <form action="" class="subscribe__form">
+                            <input type="text" placeholder="Enter email" class="subscribe__input">
+    
+                            <button class="button">
+                                Berlangganan
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">Travel</h3>
+                        <div class="w"><img src="assets\img\wonderful.png" alt=""></div>
+                        </p>
+                        <div>
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; Situs ini merupakan situs resmi Kementerian Pariwisata dan Ekonomi Kreatif Republik Indonesia. Semua isi yang tercantum di dalam situs ini bertujuan untuk memberikan informasi dan bukan sebagai tujuan komersial. Penjualan yang ditampilkan merupakan tanda kemitraan yang akan menghubungkan Anda kepada Mitra Kami.</p>
+                    <div class="footer__terms">
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <script src="assets/js/main.js"></script>
+
+        <script src="script.js"></script>
+    </body>
+</html>
